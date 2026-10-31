@@ -22,7 +22,7 @@ Resources:
   # Para recrear la instancia (y que User Data vuelva a correr) cambia este nombre,
   # por ejemplo a MyInstanceClaseV2, y actualizalo tambien en los Outputs.
 
-  MyInstanceClase:
+  EC2-Juan-v2:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: !Ref LatestAmiId
@@ -105,11 +105,11 @@ Outputs:
 
   InstanceId:
     Description: ID de la instancia EC2
-    Value: !Ref MyInstanceClase
+    Value: !Ref EC2-Juan-v2
 
   PublicIP:
     Description: IP publica de la instancia
-    Value: !GetAtt MyInstanceClase.PublicIp
+    Value: !GetAtt EC2-Juan-v2.PublicIp
 
   WebsiteURL:
     Description: URL para abrir la pagina web
