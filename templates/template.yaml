@@ -113,4 +113,4 @@ Outputs:
 
   WebsiteURL:
     Description: URL para abrir la pagina web
-    Value: !Sub http://${MyInstanceClase.PublicIp}
+    Value: !Sub http://${EC2-Juan-v2.PublicIp}
